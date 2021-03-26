@@ -16,12 +16,6 @@ class String
 
   def count_sentences
     array=self.split(/[.?!]/)
-    array.map do |i|
-      if i == ""
-        array[i].shift
-        array.unshift
-      end
-    end
-    array.count
+    array.
   end
 end
