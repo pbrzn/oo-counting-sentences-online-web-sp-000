@@ -16,9 +16,9 @@ class String
 
   def count_sentences
     array=self.split(/[.?!]/)
-    array.map do |index|
-      if index == ""
-        array.delete_at(index)
+    array.each_with_index do |n, i|
+      if n == ""
+        array.delete_at(i)
       end
     end
     array.count
