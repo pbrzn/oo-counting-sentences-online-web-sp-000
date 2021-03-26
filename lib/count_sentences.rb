@@ -21,6 +21,7 @@ class String
         array[i].shift
         array.unshift
       end
-      array.count
+    end
+    array.count
   end
 end
